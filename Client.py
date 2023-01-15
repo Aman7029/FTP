@@ -9,7 +9,7 @@ class Client:
 	def __init__(self, host, port, buffer_size=1024, verbose=False):
 		self.host = host
 		self.port = port
-		self.buffer_size = 1024
+		self.buffer_size = buffer_size
 		self.verbose = verbose
 	def connect(self):
 		self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
